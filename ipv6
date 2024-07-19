@@ -8,9 +8,10 @@ SQUISD_CONF="/etc/squid/squid.conf"
 IPV6_SETUP_SCRIPT="/usr/local/bin/ipv6-setup.sh"
 RC_LOCAL_SCRIPT="/etc/rc.local"
 
-# 安装Squid
-echo "Installing Squid..."
-dnf install -y squid
+# 更新系统并安装Squid
+echo "Updating system and installing Squid..."
+apt update
+apt install -y squid
 
 # 配置Squid
 echo "Configuring Squid..."
