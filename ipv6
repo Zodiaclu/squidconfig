@@ -121,7 +121,7 @@ cd /root
 ulimit -n 1009999
 ulimit -c unlimited
 
-apt update && apt install -y gcc net-tools bsdtar zip curl
+apt update && apt install -y gcc net-tools zip curl
 
 install_3proxy
 
