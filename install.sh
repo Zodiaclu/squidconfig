@@ -67,9 +67,3 @@ cd squid-4.17
 --without-nettle
 
 make && make install
-ulimit -n 65536 ulimit -a
-useradd squid
-chmod 777 /var/log/squid/
-systemctl disable firewalld
-cd /opt/youni_ipv4_to_ipv6
-python gen_squid_conf.py
